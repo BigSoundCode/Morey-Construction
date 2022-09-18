@@ -1,0 +1,261 @@
+p {
+	color: #808080;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media screen and (min-width: 640px) {
+
+  .page-content {
+    width: 80%;
+    margin:0 auto;
+    max-width:1280px;
+  
+    
+  }
+
+#headervideo {
+	width:960px;
+	height: 626px;
+
+}
+
+#servicevideo {
+	width: 640px;
+	height: 360px;
+
+}
+
+.service-img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+  
+/*.media {
+    display: flex;
+    align-items: center;
+}
+*/
+
+
+/*.media .content {
+    flex: 1;
+    padding: 10px;
+    width: 500px;
+}
+*/
+
+}
+
+}
+
+
+
+
+body { min-height: 100vh;
+       
+   }
+
+ion-icon {
+  text-decoration: none;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  
+  
+}
+
+.insta {
+color: #d90762;
+      
+}
+
+
+
+
+
+
+
+
+.endblock {
+
+	height: 100px;
+
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+}
+
+.inform {
+  width: 100%;
+
+}
+
+ img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+#logo {
+	max-height: 128px;
+	max-width: 111px;
+
+}
+
+
+.subscribe {
+  background: url(../images/flyingdrone.webp);
+  background-position: center; 
+  height: 280px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  right:0px;
+  max-width:100vw;
+}
+
+.reviews {
+  background: url(../images/reviews.webp);
+  background-size: cover;
+  background-position: center; 
+  height: 280px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  right:0px;
+  max-width:100vw;
+}
+
+$min-width: 15rem;
+
+// 1. Add horizontal and vertical spacing between items.
+// 2. Add vertical spacing between rows.
+// 3. Make the order of image / text alternate.
+// 4. Take all the available space.
+// 5. Require at least this amount of space or wrap.
+// 6. Prevent images from sticking to the right in single column mode.
+// 7. (Try to) take as much space as the content needs.
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1em; // 1
+  margin-left: -3.5em; // 1
+  align-items: center;
+  
+  &:not(:first-of-type) {
+    margin-top: 3em; // 2
+  }
+  
+  &:nth-child(even) {
+    flex-direction: row-reverse; // 3
+  }
+  
+  &__item {
+    padding-top: 1em; // 1
+    padding-left: 3.5em; // 1
+    
+    &--body {
+      flex-grow: 9999; // 4
+      flex-basis: $min-width; // 5
+    }
+    
+    &--figure {
+      margin-right: auto; // 6
+      flex-grow: 1; // 7
+
+      // By using `max-content` we can get a little
+      // nicer responsive behavior because the image
+      // automatically shrinks if not enough space is
+      // available, but also the column is not getting
+      // to large than the image if a lot of space
+      // is available.
+      @supports (max-width: max-content) {
+        min-width: $min-width; // 5
+        max-width: max-content;
+        flex-basis: $min-width; // 5
+        flex-grow: 99999;
+      }
+    }
+  }
+}
+
+// MISC
+body {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3em 1em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.layout {
+  &__item {
+    * + * {
+      margin-top: 1em;
+    }
+  }
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+.video-container {
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+
+
+	width: 100%;
+	height: 100%;
+}
+
+
+ 
