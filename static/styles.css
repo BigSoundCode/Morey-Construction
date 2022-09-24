@@ -16,6 +16,7 @@
   color: white;
   display: block;
   text-align: center;
+  font-weight: bold;
   
   
 }
@@ -236,4 +237,69 @@ img {
     margin: 0;
     border: none;
   }
+
 }
+
+.tagline{
+  display: block;
+  width: 50%;
+  transform: translateX(90%) translateY(100%);
+  
+
+}
+
+.intro-gradient{
+  background-color: rgba(128, 128, 128, 0.548);
+  height: 100%;
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 60% 100%);
+    }
+
+
+
+@media screen and (max-width: 640px) {
+
+  .tagline{
+    text-align: left;
+    display: block;
+    align-self: start;
+    transform: translateX(20%) translateY(100%);
+
+    
+  
+  }
+
+  .intro{
+    height: 400px;
+  }
+  .header-font {
+    font-weight: 200;
+  }
+
+  .intro-gradient{
+    background-color: rgba(128, 128, 128, 0.548);
+    height: 100%;
+    clip-path: polygon(0 0, 50% 0, 86% 100%, 0 100%);
+      }
+
+
+}
+
+
+.intro { 
+  height: 600px;
+  width: 100%;
+  background-image: url(churchcropped.jpg);
+  background-size: cover;
+  max-width: 100%;
+  color: white;
+  display: block;
+
+
+}
+
+
+
+
+
+
+
