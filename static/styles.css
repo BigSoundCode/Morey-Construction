@@ -154,9 +154,11 @@ position: relative;
 .col2 {
   flex: 4;
   margin: 10px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   padding: 5px;
-  
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  text-align: center
   /*.media {
       display: flex;
       align-items: center;
@@ -188,6 +190,7 @@ main {
     display: flex;
     padding: 5px;
   }
+
   
 
 }
@@ -270,6 +273,7 @@ img {
 
   .intro{
     height: 400px;
+    background-position: center;
   }
   .header-font {
     font-weight: 200;
@@ -299,6 +303,11 @@ img {
 
 
 
+.brick {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: none;
+}
 
 
 
