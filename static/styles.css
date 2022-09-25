@@ -272,6 +272,16 @@ img {
   
   }
 
+  img{
+    padding: 0 !important;
+    position:relative; /* relative to the normal flow */
+    top:0; /* to reset the .image2 top value */
+    margin:auto; /* to center the images */
+
+
+
+  }
+
   .intro{
     height: 400px;
     background-position: center;
